@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
 /**
  * main - enrty point
  *
@@ -8,7 +9,6 @@
  *		greaterthan, is zero and is not less than 6.
  *
  * Return: 0 (success)
- *
 */
 
 int main(void)
