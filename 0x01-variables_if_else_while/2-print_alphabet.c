@@ -1,0 +1,22 @@
+#include <sydio.h>
+
+/**
+ * main - entry point
+ *
+ * Description: print all apthabet letters
+ *
+ * Return: 0 (success)
+*/
+
+int main(void)
+{
+	char = 'a';
+
+	while (ch <= 'z')
+	{
+		putchar(ch);
+		ch++;
+	}
+	putchar('\n');
+
+	return (0);
