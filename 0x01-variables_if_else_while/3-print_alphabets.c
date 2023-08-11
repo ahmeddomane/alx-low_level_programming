@@ -1,4 +1,6 @@
 #include <stdio.h>
+
+
 /**
  * main -Entry piont
  *Description: 'print alphabets lowercase and uppercase'
@@ -18,7 +20,7 @@ int main(void)
 		putchar(n);
 		n++;
 	}
-	while (m <= 99)
+	while (m <= 90)
 	{
 		putchar(m);
 		m++;
