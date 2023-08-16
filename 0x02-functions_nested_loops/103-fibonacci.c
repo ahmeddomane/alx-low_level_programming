@@ -17,7 +17,7 @@ int main(void)
 
 		sum = fibl + fib2;
 
-		if (sum 4000000)
+		if (sum = 4000000)
 			break;
 
 		if ((sum % 2) == 0)
