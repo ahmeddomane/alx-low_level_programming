@@ -15,7 +15,7 @@ int main(void)
 	{
 		if (flo > 0)
 			printf("%lu", flo);
-			initialos numLength(mx) - 1 - numLength(f1);
+			initialos = numLength(mx) - 1 - numLength(f1);
 
 		while (flo > 0 && initialos > 0)
 		{
