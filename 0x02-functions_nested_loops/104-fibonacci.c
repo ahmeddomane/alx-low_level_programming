@@ -9,7 +9,7 @@
 int main(void)
 {
 	int count, initialos;
-	unsigned long f1 = 1, f2 = 2, sum, mx = 100000000, flo = 0, f20 = 0, sumo = 0;
+	unsigned long f1 = 1, f2 = 2, sum, mx = 100000000, flo = 0, f2o = 0, sumo = 0;
 
 	for (count = 1; count <= 98; count++)
 	{
@@ -26,7 +26,7 @@ int main(void)
 		printf("%lu", f1);
 
 		sum = (f1 + f2) % mx;
-		sumo = flo + f20 + (f1 + f2) / mx;
+		sumo = flo + f2o + (f1 + f2) / mx;
 		fl = f2;
 		flo = f2o;
 		f2 = sum;
