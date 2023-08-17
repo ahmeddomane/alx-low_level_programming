@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main -Prints a Fizz Buzz program
+ * main - Prints a Fizz Buzz program
  * Return: Always 0 (Success)
 */
 
@@ -14,28 +14,19 @@ int main(void)
 
 	for (x = 1; x <= 100; x++)
 	{
-	if ((x % 3 == 0) && (x % 5 == 0))
-	{
-	printf("FizzBuzz");
+		if ((x % 3 == 0) && (x % 5 == 0))
+			printf("FizzBuzz");
+		else if (x % 3 == 0)
+			printf("Fuzz");
+		else if (x % 5 == 0)
+			printf("Buzz");
+		else
+			printf("%d", x);
+		if (x != 100)
+			printf(" ");
+		else
+			printf("\n");
 	}
-	else if (x % 3 == 0)
-	{
-	printf("Fuzz");
-	}
-	else if (x % 5 == 0)
-	{
-	printf("Buzz");
-	{
-	else
-	{
-	printf("%d", x);
-	}
-	if (x != 100)
-	{
-	printf(" ");
-	}
-	}
-	printf("\n");
-	return (0);
 
+	return (0);
 }
