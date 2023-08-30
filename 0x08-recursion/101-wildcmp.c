@@ -14,12 +14,16 @@ char *move_past_star(char *s2)
 		return (s2);
 }
 
-
 /**
- * inception - makes magic a reality
- * @s1: the first stirng
- * @s2: the second string, can contain wildcard
- * Retrun: 1 if identical, 0 if false
+ * inception - Compares two strings with wildcard support
+ * @s1: The first string.
+ * @s2: The second string, can contain wildcard characters
+ * This function recursively compares two strings 's1' and 's2'.
+ * It returns 1 if
+ * the strings are identical, and 0 if they are not. The function handles
+ * wildcard '*' characters in 's2' by making recursive calls. It keeps track of
+ * results using the 'ret' variable
+ * Return: 1 if identical, 0 if not.
 */
 
 int inception(char *s1, char *s2)
