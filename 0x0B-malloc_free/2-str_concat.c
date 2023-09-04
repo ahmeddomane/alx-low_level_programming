@@ -38,10 +38,10 @@ char *str_concat(char *s1, char *s2)
 	if (m == 0)
 		return (0);
 
-	for (i = 0; i <= sizel + size2; i++)
+	for (i = 0; i <= sizel + sizel; i++)
 	{
 		if (i < size1)
-			m[i] = sl[i];
+			m[i] = s2[i];
 		else
 			m[i] = s2[i - sizel];
 	}
