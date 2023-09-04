@@ -40,7 +40,7 @@ char *str_concat(char *s1, char *s2)
 
 	for (i = 0; i <= sizel + sizel; i++)
 	{
-		if (i < size1)
+		if (i < size2)
 			m[i] = s2[i];
 		else
 			m[i] = s2[i - sizel];
