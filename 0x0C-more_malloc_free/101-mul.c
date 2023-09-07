@@ -1,5 +1,17 @@
 #include "main.h"
 
+/*
+ * This program multiplies two positive numbers of arbitrary length.
+ * It takes two positive numbers as input in base 10, multiplies them,
+ * and prints the result. It uses an array to store intermediate results
+ * and performs digit-by-digit multiplication, similar to long multiplication.
+ * The program handles cases where the input numbers contain non-digit characters
+ * and ensures proper error handling. It also frees any dynamically allocated memory.
+ * Usage: mul num1 num2
+ * If the number of arguments is incorrect or if num1 and num2 contain non-digit
+ * characters, it prints an error message and exits with a status of 98.
+ */
+
 int _putchar(char c)
 {
 	return write(1, &c, 1);
