@@ -63,12 +63,14 @@ void multiply(char *num1, char *num2)
 		result[i] = 0;
 	 /*Multiply the digits and add to the result*/
 	for (int i = len1 - 1; i >= 0; i--)
+	{
 		for (int j = len2 - 1; j >= 0; j--)
 			int product = (num1[i] - '0') * (num2[j] - '0');
 			int sum = product + result[i + j + 1];
 
 			result[i + j + 1] = sum % 10;
 			result[i + j] += sum / 10;
+	}
 	/*Find the first non-zero digit in the result*/
 	int start = 0;
 
