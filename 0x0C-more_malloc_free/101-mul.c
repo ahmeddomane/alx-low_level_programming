@@ -55,50 +55,36 @@ void multiply(char *num1, char *num2)
 	int *result = malloc(sizeof(int) * len_result);
 
 	if (result == NULL)
-	{
 		printf("Error\n");
 		exit(98);
-	}
 	/*Initialize the result array to 0*/
+
 	for (int i = 0; i < len_result; i++)
-	{
 		result[i] = 0;
-	}
 	 /*Multiply the digits and add to the result*/
 	for (int i = len1 - 1; i >= 0; i--)
-	{
 		for (int j = len2 - 1; j >= 0; j--)
-		{
 			int product = (num1[i] - '0') * (num2[j] - '0');
 			int sum = product + result[i + j + 1];
+
 			result[i + j + 1] = sum % 10;
 			result[i + j] += sum / 10;
-		}
-	}
 	/*Find the first non-zero digit in the result*/
 	int start = 0;
 
 	while (start < len_result && result[start] == 0)
-	{
 		start++;
-	}
 	/*Print the result*/
 	if (start == len_result)
-	{
 		printf("0\n");
-	}
 	else
 	{
 		for (int i = start; i < len_result; i++)
-		{
 			printf("%d", result[i]);
-		}
-		printf("\n");
+	printf("\n");
 	}
-
 	free(result);
 }
-
 /**
  * main - The main function of the program.
  * @argc: The number of command-line arguments.
@@ -106,7 +92,6 @@ void multiply(char *num1, char *num2)
  *
  * Return: 0 on success, 98 on error.
  */
-
 int main(int argc, char *argv[])
 {
 
