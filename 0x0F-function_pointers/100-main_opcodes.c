@@ -1,6 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * main - Entry point of the program.
+ *
+ * This program takes a number of bytes as a command-line argument and
+ * extracts the opcodes (in hexadecimal) of its own main function. It then
+ * prints these opcodes, separated by spaces, to the standard output.
+ *
+ * @argc: The number of command-line arguments (including program name).
+ * @argv: An array of strings containing the command-line arguments.
+ *
+ * Return: 0 on successful execution, 1 if arguments are incorrect,
+ *         2 if the number of bytes is negative, and other values on errors.
+ */
+
 int main(int argc, char *argv[])
 {
 	if (argc != 2)
