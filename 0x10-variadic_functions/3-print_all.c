@@ -42,10 +42,13 @@ void print_all(const char * const format, ...)
 				i++;
 				continue;
 		}
+
 		if (format[i + 1])
 			printf(", ");
 		i++;
 	}
+	
+
 	printf("\n");
 	va_end(args);
 }
